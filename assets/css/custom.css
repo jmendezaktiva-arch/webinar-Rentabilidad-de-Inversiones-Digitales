@@ -1,0 +1,115 @@
+/* ========================================================================== */
+/* SISTEMA DE PLANTILLAS NUMÉRICAS v1.0                                      */
+/* ========================================================================== */
+
+/* --- 1. CONFIGURACIÓN GLOBAL --- */
+:root {
+    --r-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --r-heading-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --primary-color: #005A9C;
+    --accent-color: #FF6F61;
+    --secondary-color: #009B77;
+    --text-color: #343A40;
+    --heading-color: #212529;
+    --r-background-color: #FFFFFF;
+}
+
+.reveal {
+    font-size: 26px; /* Ajuste base para mejor legibilidad */
+    color: var(--text-color);
+}
+
+/* --- 2. ESTILOS BASE PARA TODAS LAS DIAPOSITIVAS --- */
+.reveal .slides section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea todo arriba por defecto */
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Elementos de texto no se encogen, tienen prioridad */
+.reveal .slides section > h1,
+.reveal .slides section > h2,
+.reveal .slides section > div {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Las imágenes son flexibles: crecen y se adaptan */
+.reveal .slides section > img {
+    flex-grow: 1;
+    min-height: 0; /* Parche crucial para flexbox con imágenes */
+    object-fit: contain;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100%;
+}
+
+.reveal h1 { 
+    font-size: 2.2em;
+    color: var(--primary-color); 
+    margin-bottom: 25px;
+}
+.reveal p, .reveal li { font-size: 1.0em; }
+.reveal strong { color: var(--accent-color); }
+
+/* --- 3. DEFINICIÓN DE LAS 4 PLANTILLAS MAESTRAS --- */
+
+/* Plantilla 1: Foco Central */
+.template-1 {
+    justify-content: center; /* Centra todo el contenido verticalmente */
+    text-align: center;
+}
+
+/* Plantilla 2: Contenido General */
+.template-2 {
+    text-align: left;
+    align-items: flex-start;
+}
+.template-2 h1 { text-align: center; } /* El título siempre va centrado */
+
+/* Plantilla 3: Pantalla Dividida */
+.template-3 {
+    text-align: left;
+}
+.template-3 h1 { text-align: center; }
+.template-3 .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    flex-grow: 1; /* Permite que el contenedor crezca */
+}
+.template-3 .content-wrapper > div { flex: 1; }
+.template-3 .content-wrapper img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Plantilla 4: Solo Título */
+.template-4 {
+    justify-content: center;
+    align-items: center;
+}
+.template-4 h1 {
+    font-size: 3.5em; /* Título mucho más grande */
+}
+/* Ocultamos otros elementos por si se añaden por error */
+.template-4 > *:not(h1) {
+    display: none;
+}
+
+/* --- 4. LOGO FIJO --- */
+.company-logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 101;
+  width: 90px;
+  height: auto;
+  opacity: 0.7;
+}
