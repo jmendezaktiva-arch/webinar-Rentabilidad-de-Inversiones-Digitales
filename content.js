@@ -5,7 +5,7 @@ const slideContent = [
   {
     layout: 'layout-center-focus',
     title: 'Rentabilidad de Inversiones Digitales',
-    content: '<h3>Juntos construimos tu ruta digital en acción.</h3>',
+    content: '<h2>Juntos construimos tu ruta digital en acción.</h2>',
     image: 'assets/images/slide-1.png',
     background: '#FFFFFF'
   },
