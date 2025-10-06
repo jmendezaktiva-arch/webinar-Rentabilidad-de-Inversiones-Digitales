@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     slideContent.forEach(slideData => {
         const slide = document.createElement('section');
-// Nueva lógica para plantillas numéricas
-const templateNumber = slideData.template || 2; // Usa la plantilla 2 (Contenido General) por defecto
-slide.className = `template-${templateNumber}`;
+        slide.className = slideData.layout || 'layout-default';
 
         if (slideData.background) {
             // Comprueba si el fondo es una ruta de imagen (contiene .jpeg, .jpg, .png, .gif) o una URL
@@ -30,7 +28,7 @@ slide.className = `template-${templateNumber}`;
         let mainContent = slideData.content || '';
         let imageContent = '';
 
-        if (templateNumber === 3) {
+        if (slideData.layout === 'layout-split') {
             const textDiv = `<div>${mainContent}</div>`;
             let imageDiv = '<div>';
             if (slideData.image) {
@@ -45,10 +43,12 @@ slide.className = `template-${templateNumber}`;
             imageDiv += '</div>';
             innerHTML += `<div class="content-wrapper">${textDiv}${imageDiv}</div>`;
         
-        } else {
+            } else {
             innerHTML += mainContent;
             if (slideData.image) {
-                imageContent = `<img src="${slideData.image}" alt="${slideData.title}">`;
+                // Usar un alt más apropiado o dejarlo vacío (alt="") si es decorativa.
+                // Usaremos un alt vacío para evitar texto redundante en la diapositiva.
+                imageContent = `<img src="${slideData.image}" alt="">`; 
                 innerHTML += imageContent;
             }
         }
