@@ -1,232 +1,163 @@
-// Archivo de Contenido para el Webinar: Tu Ecosistema Digital Rentable
-// Contenido actualizado según el plan de sesión de 20 diapositivas.
+// Archivo de Contenido para el Webinar: Rentabilidad de Inversiones Digitales para PyMEs
 
 const slideContent = [
-  // Diapositiva 1: Portada de Bienvenida
+  // Diapositiva 1: Portada
   {
-    template: 1,
-    title: 'Tu Ecosistema Digital Rentable',
-    content: '<h3>Menos Esfuerzo, Más Clientes</h3>',
-    image: 'assets/images/portada.png', // SUGERENCIA: Usar una imagen dinámica y profesional
+    layout: 'layout-center-focus',
+    title: 'Rentabilidad de Inversiones Digitales',
+    content: '<h3>Juntos construimos tu ruta digital en acción.</h3>',
+    image: 'assets/images/slide-1.png',
     background: '#FFFFFF'
   },
 
-  // Diapositiva 2: ¿Estás aquí? El Dolor del Marketing Digital
+  // Diapositiva 2: Nuestra Esencia
   {
-    template: 2,
-    title: '¿Estás aquí?',
-    content: `<h2><i class="fas fa-keyboard" style="color: var(--primary-color);"></i> Pon en el Chat:</h2>
-              <p style="font-size: 1.5em; margin-top: 40px;">¿Cuál es tu mayor <strong>frustración</strong> con tu Marketing Digital AHORA MISMO?</p>`,
+    layout: 'layout-default',
+    title: 'Mi Empresa Crece: Nuestra Esencia',
+    content: '<h2>Teorema, Metodología y Valor</h2>',
+    image: 'assets/images/slide-2.png'
   },
 
-  // Diapositiva 3: Nuestra Promesa Para Ti
+  // Diapositiva 3: Pilares de Consolidación
   {
-    template: 3,
-    title: 'Mi Promesa para Ti Hoy',
-    content: `<ul>
-                <li>Saldrás con el <strong>MAPA EXACTO</strong> para elegir los canales que SÍ funcionan para tu negocio.</li>
-                <li>Tendrás un <strong>plan de acción</strong> para empezar a usarlos...</li>
-                <li><strong>...ESTA MISMA SEMANA.</strong></li>
-              </ul>`,
-    image: 'assets/images/promesa.png' // SUGERENCIA: Un ícono de mapa o brújula
-  },
-
-  // Diapositiva 4: ¿Quiénes Somos? Mi Empresa Crece
-  {
-    template: 3,
-    title: '¿Quiénes Somos? Mi Empresa Crece',
-    content: `<p>No somos teóricos, somos <strong>consultores</strong> que implementamos sistemas que generan <strong>resultados reales</strong>.</p>
-              <p>Nuestra metodología se basa en la <strong>responsabilidad compartida</strong> para transformar tu negocio.</p>`,
-    // NOTA: main.js soporta dos imágenes para esta plantilla
-    image: 'assets/images/facilitador1.png', // SUGERENCIA: Foto del Facilitador 1
-    image2: 'assets/images/facilitador2.png' // SUGERENCIA: Foto del Facilitador 2
-  },
-
-  // Diapositiva 5: El Programa "Consolida 360°"
-  {
-    template: 2,
-    title: 'El Programa "Consolida 360°"',
-    subtitle: 'Este webinar es una muestra de un sistema integral de transformación',
-    content: `<div class="columns-wrapper" style="margin-top: 30px; align-items: stretch;">
-                <div class="column">
-                  <h3><i class="fas fa-users"></i> Pilar A: Equipos Autónomos</h3>
-                </div>
-                <div class="column" style="border: 4px solid var(--accent-color); border-radius: 15px; padding: 15px; transform: scale(1.05);">
-                  <h3><i class="fas fa-bullseye"></i> Pilar B: Ecosistema de Ventas</h3>
-                  <p><strong>(Hoy veremos una muestra de este pilar)</strong></p>
-                </div>
-                <div class="column">
-                  <h3><i class="fas fa-coins"></i> Pilar C: Inversiones Inteligentes</h3>
-                </div>
-              </div>`
-  },
-  
-  // Diapositiva 6: El Verdadero Problema
-  {
-    template: 1,
-    title: 'El Verdadero Problema...',
-    content: `<p>Intentar estar en todos lados es como entrar a una jungla <strong>sin mapa ni brújula.</strong></p>
-              <p style="font-size: 1.5em;">El problema no eres tú, es que <strong>te falta el mapa.</strong></p>`,
-    image: 'assets/images/jungla.png' // SUGERENCIA: Una imagen de una encrucijada o jungla
-  },
-
-  // Diapositiva 7: La Solución: Tu Ecosistema de Ventas Digitales
-  {
-    template: 3,
-    title: 'La Solución: Tu Ecosistema de Ventas',
-    content: `<p>Deja de pensar en "canales" aislados.</p>
-              <p>Empieza a pensar en un <strong>SISTEMA INTELIGENTE</strong> donde cada pieza tiene un propósito.</p>
-              <p>No tienes que estar en todos lados, sino en los <strong>lugares CORRECTOS para ti.</strong></p>`,
-    image: 'assets/images/ecosistema.png' // SUGERENCIA: Un diagrama de flujo simple
-  },
-
-  // Diapositiva 8: El Mapa del Ecosistema Digital
-  {
-    template: 2,
-    title: 'El Mapa del Ecosistema Digital',
-    subtitle: 'Esta diapositiva vale oro: es tu brújula para tomar decisiones',
-    content: `<p>Cada estrategia tiene un propósito, un tiempo de retorno y una inversión necesaria MUY diferentes.</p>`,
-    image: 'assets/images/mapa-ecosistema.png' // IMPORTANTE: Imagen de la tabla "Mapa Ecosistema Digital"
-  },
-
-  // Diapositiva 9: El Filtro de Decisión
-  {
-    template: 2,
-    title: 'El Filtro de Decisión: 3 Preguntas Clave',
-    content: `<div class="columns-wrapper" style="margin-top: 30px;">
-                <div class="column"><h3><i class="fas fa-user-check"></i> 1. ¿Dónde está mi cliente ideal?</h3></div>
-                <div class="column"><h3><i class="fas fa-balance-scale"></i> 2. ¿Qué tiene mayor impacto vs. esfuerzo AHORA?</h3></div>
-                <div class="column"><h3><i class="fas fa-battery-full"></i> 3. ¿Tengo la capacidad REAL (tiempo, dinero, habilidad)?</h3></div>
-              </div>
-              <p style="text-align: center; margin-top: 40px;">Ser <strong>honesto</strong> aquí te salva de empezar proyectos que morirán en un mes.</p>`
-  },
-
-  // Diapositiva 10: La Regla de Oro
-  {
-    template: 1,
-    title: 'La Regla de Oro que te dará PAZ',
-    content: `<div style="font-size: 10em; font-weight: bold; color: var(--primary-color); line-height: 1;">2</div>
-              <h2 style="margin-top: 0;">MÁXIMO 2 CANALES</h2>
-              <p>Domínenlos. Perfeciónenlos. Y solo entonces, piensen en un tercero.</p>`
-  },
-  
-  // Diapositiva 11: Tu Primera Victoria Rápida
-  {
-    template: 2,
-    title: 'Tu Primera Victoria: Set Inicial de 5 Contenidos',
-    subtitle: 'No necesitas mil ideas, necesitas estas 5 piezas clave para arrancar.',
-    content: `<ol style="font-size: 1.2em; margin-top: 20px;">
-                <li>Post de <strong>Bienvenida</strong> (Tu historia, tu porqué).</li>
-                <li>Producto/Servicio <strong>en Acción</strong> (Foto o video corto).</li>
-                <li><strong>Testimonio</strong> Real de un Cliente.</li>
-                <li><strong>Consejo Práctico</strong> / Mini Tutorial de Valor.</li>
-                <li><strong>Invitación Clara</strong> a la Acción (CTA).</li>
-              </ol>`
-  },
-  
-  // Diapositiva 12: Mide lo que Importa
-  {
-    template: 1,
-    title: 'Mide lo que Importa (Sin Abrumarte)',
-    content: `<p>Define solo 3 indicadores clave para no liderar a ciegas.</p>
-             <div class="columns-wrapper" style="margin-top: 30px;">
-                <div class="column"><h3><i class="fas fa-users"></i> Visitas Calificadas</h3></div>
-                <div class="column"><h3><i class="fas fa-exchange-alt"></i> Tasa de Conversión</h3></div>
-                <div class="column"><h3><i class="fas fa-dollar-sign"></i> Costo por Lead (CPL)</h3></div>
-              </div>`
-  },
-
-  // Diapositiva 13: El Sistema Completo
-  {
-    template: 1,
-    title: 'El Sistema en Acción',
-    content: `<h3>Mapa + Filtro + Regla de Oro + Contenido + Métricas</h3>
-              <p style="margin-top: 40px;">Te hemos dado el "QUÉ". El verdadero reto es el "CÓMO" y el acompañamiento.</p>
-              <h2 style="margin-top: 40px;">Escribe <strong style="color: var(--accent-color)">"SISTEMA"</strong> en el chat si quieres las herramientas completas.</h2>`,
-    image: 'assets/images/sistema-completo.png' // SUGERENCIA: Un gráfico que una los conceptos
-  },
-  
-  // Diapositiva 14: Taller Intensivo "Consolida 360°"
-  {
-    template: 3,
-    title: 'Taller Intensivo: Consolida 360°',
-    content: `<p>Para los que escribieron "SISTEMA":</p>
-              <p>No es un curso para escuchar.</p>
-              <p>Es un <strong>taller de CONSTRUCCIÓN</strong> para tu negocio.</p>`,
-    image: 'assets/images/logo-programa.png' // SUGERENCIA: Logo del programa
-  },
-
-  // Diapositiva 15: La Construcción: Sesión por Sesión
-  {
-    template: 2,
-    title: 'El Plan de Construcción',
-    content: `<div class="columns-wrapper">
-                <div class="column">
-                  <h3><i class="fas fa-users"></i> Sesión A: El Piloto</h3>
-                  <p>Crea un equipo proactivo y autónomo.</p>
-                </div>
-                <div class="column">
-                  <h3><i class="fas fa-bullseye"></i> Sesión B: El Mapa</h3>
-                  <p>Sales con tu Plan Maestro de Canal de 1 página.</p>
-                </div>
-                <div class="column">
-                  <h3><i class="fas fa-coins"></i> Sesión C: El Combustible</h3>
-                  <p>Tomas decisiones de inversión con certeza.</p>
-                </div>
-              </div>`
-  },
-  
-  // Diapositiva 16: ¿Qué obtendrás en la Sesión B (Versión Completa)?
-  {
-    template: 3,
-    title: 'La Sesión B fue solo la punta del Iceberg',
-    content: `<p>Dentro del programa, no solo vemos el mapa, lo construimos con:</p>
+    layout: 'layout-default',
+    title: 'Tu Programa de Transformación',
+    content: `<h3>Los 3 Pilares de tu Consolidación</h3>
               <ul>
-                <li>Matriz de Priorización Inteligente</li>
-                <li>Ficha de Cliente Ideal (Buyer Persona)</li>
-                <li>Plan de Contenidos a fondo</li>
-                <li>Diseño de tu primer Flujo de Captación</li>
+                <li>Pilar 1: Liderazgo y Disciplina</li>
+                <li>Pilar 2: <strong>Ecosistema Digital de Ventas</strong> (Foco de Hoy)</li>
+                <li>Pilar 3: <strong>Inversiones Inteligentes</strong> (Ruta a resultados tangibles en 90 días)</li>
+              </ul>`
+  },
+
+  // Diapositiva 4: Guías en el Viaje (Asume layout-split y uso de image2 para 2 fotos de facilitadores)
+  {
+    layout: 'layout-split',
+    title: 'Sus Guías en este Viaje',
+    content: `<ul>
+                <li>Aliados Expertos</li>
+                <li>Garantía de Responsabilidad Compartida</li>
+                <li>Implementación Estratégica</li>
               </ul>`,
-    image: 'assets/images/iceberg.png' // SUGERENCIA: Imagen de un iceberg
+    image: 'assets/images/facilitador-1.png',
+    image2: 'assets/images/facilitador-2.png'
   },
 
-  // Diapositiva 17: La Oferta Irresistible
+  // Diapositiva 5: Slogan
   {
-    template: 2,
-    title: 'La Oferta Irresistible',
-    content: `<ul class="infographic-list" style="max-width: 80%;">
-                <li><i class="fas fa-chalkboard-teacher"></i> <div><strong>3 Sesiones Taller en Vivo</strong></div></li>
-                <li><i class="fas fa-file-alt"></i> <div><strong>Workbooks y Plantillas de Implementación</strong></div></li>
-                <li><i class="fas fa-user-tie"></i> <div><strong>Sesión de Seguimiento 1 a 1 con un Consultor</strong></div></li>
+    layout: 'layout-center-focus',
+    title: 'Inversión Inteligente en Canales Digitales',
+    content: '<h3>Convierte el Gasto Digital en un Activo:<br>Tu Ruta Rápida Hacia la Rentabilidad Sostenible.</h3>'
+  },
+
+  // Diapositiva 6: CTA Inicial (CapEx)
+  {
+    layout: 'layout-center-focus',
+    title: 'CTA Inicial: ¡El Primer Paso!',
+    content: '<h2>Tu próximo gasto digital (CRM, Web): Clasifícalo como <strong>Inversión en Capital (CapEx)</strong>, no como Gasto Operativo (OpEx).</h2>'
+  },
+
+  // Diapositiva 7: La Tesis del Constructor (split para comparación)
+  {
+    layout: 'layout-split',
+    title: 'La Tesis del Constructor',
+    content: `<ul>
+                <li><strong>Mentalidad 'Chef' (Sobrevivir):</strong> Improvista y gasta.</li>
+                <li><strong>Mentalidad 'Constructor' (Prosperar):</strong> Genera Flujo de Caja Operativo (FCO) Positivo.</li>
+                <li>Estrategia Clave: Enfoque limitado (Máximo 2 canales).</li>
+              </ul>`,
+    image: 'assets/images/constructor.png'
+  },
+
+  // Diapositiva 8: Arquitectura 1 (Web)
+  {
+    layout: 'layout-default',
+    title: 'Arquitectura 1: La Oficina 24/7 (Web)',
+    content: '<h3>La Inversión Crítica:</h3><p>Tu Presencia Web Básica debe ser tratada como una <strong>inversión fija en infraestructura crítica (UX/UI)</strong>.</p>',
+    image: 'assets/images/web-arquitectura.png'
+  },
+
+  // Diapositiva 9: Riesgo de Fricción
+  {
+    layout: 'layout-center-focus',
+    title: 'Riesgo de Fricción',
+    content: `<h2><i class='fas fa-exclamation-triangle' style='color: var(--accent-color);'></i> ROI Negativo</h2>
+              <p>Si la Arquitectura Base falla, el <strong>88% del dinero de tu publicidad se desperdicia</strong>.</p>`
+  },
+
+  // Diapositiva 10: Arquitectura 2 (Set Inicial)
+  {
+    layout: 'layout-split',
+    title: 'Arquitectura 2: El Set Inicial',
+    content: `<ul>
+                <li>Solución: Inversión en <strong>Contenido Inicial de Alto Valor</strong>.</li>
+                <li>5 Piezas Fundamentales.</li>
+                <li>Llamada a la Acción irresistible.</li>
               </ul>
-              <h2 style="text-align: center; margin-top: 40px;">Valor Total: $5,690 MXN</h2>`
-  },
-
-  // Diapositiva 18: Tu Decisión: La Oferta Especial
-  {
-    template: 1,
-    title: 'Oferta Especial para Asistentes',
-    content: `<p style="font-size: 1.2em;">Precio Normal: <del>$5,690 MXN</del></p>
-              <p style="margin-top: 30px;">Primeros 10 en inscribirse:</p>
-              <h2 style="color: var(--secondary-color); font-size: 2em;">$4,190 MXN</h2>
-              <p style="margin-top: 30px;">Si te inscribes en los próximos 15 minutos:</p>
-              <h2 style="font-size: 3em; color: var(--accent-color);"><strong>$1,190 MXN</strong></h2>
-              <p style="margin-top: 30px;">El enlace para inscribirte está en el chat.</p>`
-  },
-
-  // Diapositiva 19: Preguntas y Respuestas
-  {
-    template: 4,
-    title: '¿Preguntas?',
-    subtitle: '<p style="font-size: 0.8em;">La oferta especial termina pronto. El enlace de inscripción está en el chat.</p>'
+              <p>Es el <strong>Activo Amortizable</strong> que eleva el engagement inicial.</p>`,
+    image: 'assets/images/5-piezas.png'
   },
   
-  // Diapositiva 20: Cierre y Último Llamado a la Acción
+  // Diapositiva 11: La Arquitectura: Escalabilidad
   {
-    template: 1,
-    title: 'Tu Decisión Final',
-    content: `<h3>Seguir improvisando en la jungla vs. <strong>Instalar un Sistema con un Mapa.</strong></h3>
-              <p style="margin-top: 60px;">Gracias por acompañarnos. A los que se unieron, ¡nos vemos dentro!</p>`,
-    image: 'assets/images/cierre.png' // SUGERENCIA: Una imagen de un camino claro
+    layout: 'layout-split',
+    title: 'La A de Arquitectura: Escalabilidad',
+    content: `<ul>
+                <li>flujos simples <strong>Lead Magnet + Respuesta Automática</strong>.</li>
+                <li>Reducción del CPL.</li>
+              </ul>
+              <p>Es el <strong>Activo Amortizable</strong> que eleva el engagement inicial.</p>`,
+    image: 'assets/images/5-piezas.png'
+  },
+
+  // Diapositiva 12: Flujo
+  {
+    layout: 'layout-split',
+    title: 'IA y Captación Rápida (El Flujo)',
+    content: `<ul>
+                <li>Solución: Inversión en <strong>Automatización</strong>.</li>
+                <li>Infraestructura Elástica.</li>
+                <li>Arquitectura Elástica.</li>
+                <li>Disponibilidad 24/7.</li>
+              </ul>
+              `,
+    image: 'assets/images/5-piezas.png'
+  },
+
+  // Diapositiva 13: RH
+  {
+    layout: 'layout-split',
+    title: 'C de Capital Humano (La Inversión Más Rentable)',
+    content: `<ul>
+                <li>Retorno Garantizado<strong>en capacitación</strong>.</li>
+                <li>Invertir en caputal humano.</li>
+              </ul>
+              `,
+    image: 'assets/images/5-piezas.png'
+  },
+
+  // Diapositiva 14: Checkpoint Financiero (LTV:CAC)
+  {
+    layout: 'layout-center-focus',
+    title: 'La B de Benchmarks: El Checkpoint Financiero',
+    content: '<h2>El Único KPI Real: <strong>Ratio LTV:CAC</strong> (3 a 1)</h2><p>Un ratio deficiente condena al negocio a \'quemar caja\'.</p>'
+  },
+  
+  // Diapositiva 15: Dilema CAC (split para comparación)
+  {
+    layout: 'layout-split',
+    title: 'Dilema CAC: Velocidad vs. Sostenibilidad',
+    content: `<div><h3>Velocidad (Ads)</h3><p>Usa Publicidad Pagada (Ads) para <strong>flujo de caja y velocidad inmediata</strong>.</p><hr></div>
+              <div><h3>Sostenibilidad (Orgánico)</h3><p>Reinvierte el capital en <strong>activos orgánicos</strong> (SEO/Contenido).</p></div>`,
+    image: 'assets/images/velocidad-sostenibilidad.png'
+  },
+
+  // Diapositiva 16: CTA Final
+  {
+    layout: 'layout-default',
+    title: 'El Próximo Paso: Tu Hoja de Ruta',
+    content: `<h3><i class='fas fa-check-circle' style='color: var(--primary-color);'></i> Llamada a la Acción y Beneficio Final:</h3>
+              <p>Define hoy tu <strong>canal prioritario</strong> y pon en marcha tu métrica <strong>LTV:CAC</strong>.</p>
+              <p style='font-size: 1.5em; margin-top: 30px;'>La decisión de hoy lleva a la consolidación y a la libertad financiera.</p>`
   }
 ];
