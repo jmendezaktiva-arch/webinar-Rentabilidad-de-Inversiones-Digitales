@@ -1,115 +1,177 @@
-/* ========================================================================== */
-/* SISTEMA DE PLANTILLAS NUMÉRICAS v1.0                                      */
-/* ========================================================================== */
-
-/* --- 1. CONFIGURACIÓN GLOBAL --- */
+/* Custom CSS v2: Profesional, Modular y Universal */
 :root {
     --r-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --r-heading-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --primary-color: #005A9C;
-    --accent-color: #FF6F61;
-    --secondary-color: #009B77;
+    --primary-color: #005A9C; /* Vibrant Blue */
+    --accent-color: #FF6F61;  /* Vibrant Coral/Orange */
+    --secondary-color: #009B77; /* Vibrant Green */
     --text-color: #343A40;
     --heading-color: #212529;
     --r-background-color: #FFFFFF;
 }
 
+/* --- CONTROL GLOBAL DE FUENTES Y ESPACIO --- */
 .reveal {
-    font-size: 26px; /* Ajuste base para mejor legibilidad */
+    font-size: 24px; 
     color: var(--text-color);
 }
 
-/* --- 2. ESTILOS BASE PARA TODAS LAS DIAPOSITIVAS --- */
+/* ========================================================================== */
+/* --- LAYOUT GLOBAL Y REGLAS DE FLEXBOX (La base de todo) --- */
+/* ========================================================================== */
+
+/* 1. Contenedor Principal de Diapositiva: Asegura que el contenido fluya verticalmente */
 .reveal .slides section {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinea todo arriba por defecto */
+    justify-content: flex-start; /* Alinea el contenido arriba por defecto */
     height: 100%;
-    padding: 40px;
+    padding: 20px 40px;
     box-sizing: border-box;
     text-align: center;
 }
 
-/* Elementos de texto no se encogen, tienen prioridad */
-.reveal .slides section > h1,
-.reveal .slides section > h2,
-.reveal .slides section > div {
+/* 2. Reglas de Texto: Los elementos de texto NO se encogen */
+.reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal li, .reveal div {
     flex-shrink: 0;
-    width: 100%;
 }
-
-/* Las imágenes son flexibles: crecen y se adaptan */
-.reveal .slides section > img {
-    flex-grow: 1;
-    min-height: 0; /* Parche crucial para flexbox con imágenes */
-    object-fit: contain;
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 100%;
-}
-
-.reveal h1 { 
-    font-size: 2.2em;
-    color: var(--primary-color); 
-    margin-bottom: 25px;
-}
-.reveal p, .reveal li { font-size: 1.0em; }
+.reveal h1 { font-size: 2.2em; color: var(--primary-color); margin-bottom: 15px; }
+.reveal h2 { font-size: 1.8em; color: var(--primary-color); margin-bottom: 15px; }
+.reveal h3 { font-size: 1.2em; }
+.reveal p, .reveal li, .reveal div { font-size: 0.9em; }
 .reveal strong { color: var(--accent-color); }
 
-/* --- 3. DEFINICIÓN DE LAS 4 PLANTILLAS MAESTRAS --- */
+/* 3. Regla Definitiva para Imágenes Primarias: CRECE para llenar el espacio */
+.reveal .slides section > img {
+    flex-grow: 1;           /* Crece para llenar el espacio vertical restante */
+    flex-shrink: 1;         /* Se encoge si el espacio es limitado */
+    min-height: 0;          /* Parche crucial de flexbox */
+    object-fit: contain;
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 100%;
+}
 
-/* Plantilla 1: Foco Central */
-.template-1 {
-    justify-content: center; /* Centra todo el contenido verticalmente */
+/* --- PLANTILLAS BÁSICAS (ASIGNADAS EN content.js) --- */
+
+/* 1. layout-default: Alineación Izquierda/Arriba, Contenido y luego Imagen */
+.layout-default { text-align: left; align-items: flex-start; }
+
+/* 2. layout-center-focus: Enfoca la frase centralmente */
+.layout-center-focus {
+    justify-content: center !important; /* Centra el contenido verticalmente */
     text-align: center;
 }
 
-/* Plantilla 2: Contenido General */
-.template-2 {
-    text-align: left;
+/* 3. layout-split: Contenido + Imagen (50/50) */
+.layout-split { 
+    text-align: left; 
     align-items: flex-start;
 }
-.template-2 h1 { text-align: center; } /* El título siempre va centrado */
-
-/* Plantilla 3: Pantalla Dividida */
-.template-3 {
-    text-align: left;
-}
-.template-3 h1 { text-align: center; }
-.template-3 .content-wrapper {
+.layout-split h1 { text-align: center; width: 100%; }
+.layout-split .content-wrapper {
     display: flex;
     align-items: center;
     gap: 30px;
     width: 100%;
-    flex-grow: 1; /* Permite que el contenedor crezca */
+    margin-top: 20px;
 }
-.template-3 .content-wrapper > div { flex: 1; }
-.template-3 .content-wrapper img {
-    max-height: 500px;
-    width: 100%;
-    object-fit: contain;
+.layout-split .content-wrapper > div { flex: 1; } /* Cada mitad ocupa el 50% */
+
+/* --- PLANTILLAS ESPECIALIZADAS (REFACTORIZADAS) --- */
+
+/* 4. Layout 50/50 Invertido (Reemplaza .slide-2-reversed) */
+.layout-split.reversed .content-wrapper {
+    flex-direction: row-reverse;
 }
 
-/* Plantilla 4: Solo Título */
-.template-4 {
-    justify-content: center;
-    align-items: center;
+/* 5. Layout Dos Columnas de Texto/Imagen (Reemplaza .slide-2-custom-columns) */
+.layout-two-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-top: 20px;
 }
-.template-4 h1 {
-    font-size: 3.5em; /* Título mucho más grande */
+.layout-two-columns .column {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-/* Ocultamos otros elementos por si se añaden por error */
-.template-4 > *:not(h1) {
-    display: none;
-}
+/* Estilos internos para el contenido de estas columnas */
+.layout-two-columns .logo-final { max-height: 130px; margin-bottom: 25px; }
+.layout-two-columns .quote-final { font-weight: bold; font-size: 1.1em; border-left: 4px solid var(--accent-color); padding-left: 15px; text-align: left; }
+.layout-two-columns .image-final { width: 100%; max-height: 350px; object-fit: cover; border-radius: 10px; }
 
-/* --- 4. LOGO FIJO --- */
+/* 6. Layout Tres Columnas (Reemplaza .slide-6-three-columns) */
+.layout-three-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+.layout-three-columns .column { flex: 1; text-align: left; }
+.layout-three-columns .column img { width: 100%; border-radius: 8px; object-fit: cover; }
+.layout-three-columns ul { padding-left: 20px; margin: 0; }
+
+/* --- PLANTILLA INFOGRÁFICA Y UTILIDADES (REFACTORIZADAS) --- */
+
+/* Infografía Horizontal (Reemplaza .icon-grid) */
+.horizontal-infographic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  margin-top: 150px;
+}
+.horizontal-infographic .icon-item i { font-size: 4em; margin-bottom: 15px; }
+.horizontal-infographic .icon-item p { font-size: 1.2em; font-weight: bold; }
+.horizontal-infographic .connector { font-size: 2.5em; }
+
+/* Lista de Infografía con Iconos (Reemplaza .infographic-list) */
+.icon-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 80%;
+  margin: 50px auto 0 auto;
+}
+.icon-list li { display: flex; align-items: center; margin-bottom: 25px; }
+.icon-list i { font-size: 2.5em; color: var(--secondary-color); margin-right: 25px; width: 50px; text-align: center; }
+
+/* --- CLASES DE UTILIDAD --- */
+
+/* Clases de Estilo de Componente (Usado en content.js) */
+.highlight-quote { margin-top: 40px; font-style: italic; border-left: 4px solid var(--accent-color); padding-left: 15px; }
+.session-flow-text { text-align: center; margin-top: 40px; font-size: 1.2em; font-weight: bold; }
+.icon-highlight { color: var(--accent-color); }
+.no-style-list { list-style: none; padding-left: 0; }
+.facilitator-photo { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; margin: 10px; }
+
+/* Clases de Ajuste Fino */
+.h1-centered h1 { text-align: center; width: 100%; } /* Para centrar el h1 en layouts por defecto */
+
+/* --- LOGO FIJO EN ESQUINA --- */
+
+.reveal .slides { position: relative; }
+
 .company-logo {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 20px;
+  left: 20px;
   z-index: 101;
-  width: 90px;
+  width: 80px;
   height: auto;
   opacity: 0.7;
+}
+
+/* Opcional: Ocultar el logo en la primera diapositiva si no lo quieres en la portada */
+.reveal .slides section:first-child .company-logo {
+  display: none;
 }
