@@ -4,7 +4,7 @@ const slideContent = [
   // Diapositiva 1: Portada
   {
     layout: 'layout-center-focus',
-    title: 'Rentabilidad de Inversiones Digitales',
+    title: 'Rentabilidad de nversiones Digitales',
     content: '<h3>Juntos construimos tu ruta digital en acción.</h3>',
     image: 'assets/images/slide-1.png',
     background: '#FFFFFF'
@@ -14,7 +14,7 @@ const slideContent = [
   {
     layout: 'layout-default h1-centered',
     title: 'Mi Empresa Crece: Nuestra Esencia',
-    content: '<h2>Teorema, Metodología y Valor</h2>',
+    content: '<h3>Teorema, Metodología y Valor</h3>',
     image: 'assets/images/slide-2.png'
   },
 
@@ -25,8 +25,8 @@ const slideContent = [
     content: `<h3>Los 3 Pilares de tu Consolidación</h3>
               <ul>
                 <li>Pilar 1: Liderazgo y Disciplina</li>
-                <li>Pilar 2: <strong>Ecosistema Digital de Ventas</strong> (Foco de Hoy)</li>
-                <li>Pilar 3: <strong>Inversiones Inteligentes</strong> (Ruta a resultados tangibles en 90 días)</li>
+                <li>Pilar 2: <strong>Ecosistema Digital de Ventas</strong>)</li>
+                <li>Pilar 3: <strong>Inversiones Inteligentes</strong></li>
               </ul>`
   },
 
@@ -54,7 +54,11 @@ const slideContent = [
   {
     layout: 'layout-center-focus',
     title: 'CTA Inicial: ¡El Primer Paso!',
-    content: '<h2>Tu próximo gasto digital (CRM, Web): Clasifícalo como <strong>Inversión en Capital (CapEx)</strong>, no como Gasto Operativo (OpEx).</h2>'
+    content: `<ul>
+                <li><h3>Tu próximo gasto digital (CRM, Web):</h3></li>
+                <li>Clasifícalo como <strong>Inversión en Capital (CapEx)</strong></li> 
+                <li>No como Gasto Operativo (OpEx)</li>
+                </ul>`,
   },
 
   // Diapositiva 7: La Tesis del Constructor (split para comparación)
@@ -103,7 +107,7 @@ const slideContent = [
     layout: 'layout-split',
     title: 'La A de Arquitectura: Escalabilidad',
     content: `<ul>
-                <li>flujos simples <strong>Lead Magnet + Respuesta Automática</strong>.</li>
+                <li>Flujos simples <strong>Lead Magnet + Respuesta Automática</strong>.</li>
                 <li>Reducción del CPL.</li>
               </ul>
               <p>Es el <strong>Activo Amortizable</strong> que eleva el engagement inicial.</p>`,
