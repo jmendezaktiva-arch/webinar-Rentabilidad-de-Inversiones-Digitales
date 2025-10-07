@@ -12,7 +12,7 @@ const slideContent = [
 
   // Diapositiva 2: Nuestra Esencia
   {
-    layout: 'layout-default',
+    layout: 'layout-default h1-centered',
     title: 'Mi Empresa Crece: Nuestra Esencia',
     content: '<h2>Teorema, Metodología y Valor</h2>',
     image: 'assets/images/slide-2.png'
@@ -32,7 +32,7 @@ const slideContent = [
 
   // Diapositiva 4: Guías en el Viaje (Asume layout-split y uso de image2 para 2 fotos de facilitadores)
   {
-    layout: 'layout-split',
+    layout: 'layout-split reversed',
     title: 'Sus Guías en este Viaje',
     content: `<ul>
                 <li>Aliados Expertos</li>
@@ -71,7 +71,7 @@ const slideContent = [
 
   // Diapositiva 8: Arquitectura 1 (Web)
   {
-    layout: 'layout-default',
+    layout: 'layout-default h1-centered',
     title: 'Arquitectura 1: La Oficina 24/7 (Web)',
     content: '<h3>La Inversión Crítica:</h3><p>Tu Presencia Web Básica debe ser tratada como una <strong>inversión fija en infraestructura crítica (UX/UI)</strong>.</p>',
     image: 'assets/images/web-arquitectura.png'
@@ -154,7 +154,7 @@ const slideContent = [
 
   // Diapositiva 16: CTA Final
   {
-    layout: 'layout-default',
+    layout: 'layout-default h1-centered',
     title: 'El Próximo Paso: Tu Hoja de Ruta',
     content: `<h3><i class='fas fa-check-circle' style='color: var(--primary-color);'></i> Llamada a la Acción y Beneficio Final:</h3>
               <p>Define hoy tu <strong>canal prioritario</strong> y pon en marcha tu métrica <strong>LTV:CAC</strong>.</p>
