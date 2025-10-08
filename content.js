@@ -100,9 +100,6 @@ const slideContent = [
     content: `<h2>El "CÓMO" que transforma tu negocio en 30 días.</h2>
               <p style="margin-top: 20px; font-size: 1.2em;">No es un curso de teoría. Es una hoja de ruta de implementación guiada.</p>
               <div class="icon-grid" style="margin-top: 40px;">
-                <div><p>Sistema</p></div>
-                <div><p>Métricas</p></div>
-                <div><p>Implementación</p></div>
               </div>`,
     image: 'assets/images/slide-11.png'
   },
