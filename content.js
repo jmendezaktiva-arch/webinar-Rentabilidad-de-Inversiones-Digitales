@@ -128,7 +128,7 @@ const slideContent = [
     layout: 'layout-center-focus',
     title: '¿Dudas? Estamos aquí para resolverlas.',
     content: `<h2>"Tu pregunta puede ser la clave para otro líder. ¡Adelante!"</h2>
-              <p style="margin-top: 30px;">(Con las 3 fotos de los facilitadores)</p>`,
+              <p style="margin-top: 30px;"></p>`,
     image: 'assets/images/slide-14.png'
   }
 ];
