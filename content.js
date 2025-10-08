@@ -1,156 +1,141 @@
-// Archivo de Contenido para el Webinar: Rentabilidad de Inversiones Digitales para PyMEs
+
+
+// Archivo de Contenido para el Webinar: Consolida 360° (Reescrito)
 
 const slideContent = [
-  // Diapositiva 1: Portada
+  // Diapositiva 1: Portada (Guía 1 - BLOQUE 1: BIENVENIDA Y ENCUADRE)
   {
     layout: 'layout-center-focus',
-    title: 'Rentabilidad de Inversiones Digitales',
-    content: '<h3>Juntos construimos tu ruta digital en acción.</h3>',
+    title: 'Dejar de Perseguir Ventas y Empezar a Construirlas',
+    content: '<h3>"El secreto no es trabajar más, es trabajar con inteligencia."</h3><p><em>(Con fotos de los 3 facilitadores: Estratega, Analista, Implementador)</em></p>',
     image: 'assets/images/slide-1.png',
     background: '#FFFFFF'
   },
 
-  // Diapositiva 2: Nuestra Esencia
+  // Diapositiva 2: Misión (Guía 2)
   {
-    layout: 'layout-default h1-centered',
-    title: 'Mi Empresa Crece: Nuestra Esencia',
-    content: '<h3>Liderazgo, Metodología y Disciplina</h3>',
-    image: 'assets/images/slide-2.png'
+    layout: 'layout-default',
+    title: 'Nuestra Misión: Tu Crecimiento Sostenible',
+    content: '<h2>"Construimos sistemas, no soluciones temporales."</h2>',
+    image: 'assets/images/slide-2.png' // Imagen: Andamio sólido que soporta una planta.
   },
 
-  // Diapositiva 3: Guías en el Viaje (Asume layout-split y uso de image2 para 2 fotos de facilitadores)
-  {
-    layout: 'layout-split reversed',
-    title: 'Sus Guías en este Viaje',
-    content: `<ul>
-                <li>Aliados Expertos</li>
-                <li>Garantía de Responsabilidad Compartida</li>
-                <li>Implementación Estratégica</li>
-              </ul>`,
-    image: 'assets/images/slide-3.png',
-  },
-
-  // Diapositiva 4: Slogan
-  {
-    layout: 'layout-center-focus',
-    title: 'Inversión Inteligente en Canales Digitales',
-    content: '<h3>Convierte el Gasto Digital en un Activo:<br>Tu Ruta Rápida Hacia la Rentabilidad Sostenible.</h3>'
-  },
-
-  // Diapositiva 5: CTA Inicial (CapEx)
-  {
-    layout: 'layout-center-focus',
-    title: 'CTA Inicial: ¡El Primer Paso!',
-    content: `<ul>
-                <li><h3>Tu próximo gasto digital (CRM, Web):</h3></li>
-                <li>Clasifícalo como <strong>Inversión en Capital (CapEx)</strong></li> 
-                <li>No como Gasto Operativo (OpEx)</li>
-                </ul>`,
-    image: 'assets/images/slide-5.png',
-  },
-
-  // Diapositiva 6: La Tesis del Constructor (split para comparación)
+  // Diapositiva 3: Problema (Guía 3)
   {
     layout: 'layout-split',
-    title: 'La Tesis del Constructor',
+    title: 'El Síndrome del "Esfuerzo Desconectado"',
     content: `<ul>
-                <li><strong>Mentalidad 'Chef' (Sobrevivir):</strong> Improvista y gasta.</li>
-                <li><strong>Mentalidad 'Constructor' (Prosperar):</strong> Genera Flujo de Caja Operativo (FCO) Positivo.</li>
-                <li>Estrategia Clave: Enfoque limitado (Máximo 2 canales).</li>
+                <li><strong>Canales Aislados</strong> = Esfuerzo Duplicado, Resultados Divididos.</li>
+                <li>El problema no es tu equipo, es la falta de un sistema que los conecte.</li>
               </ul>`,
+    image: 'assets/images/slide-3.png' // Imagen: Diagrama de caos con flechas cruzadas.
+  },
+
+  // Diapositiva 4: La Solución (Guía 4)
+  {
+    layout: 'layout-default',
+    title: 'Tu Hoja de Ruta para Hoy',
+    content: `<div class="columns-4">
+                <div><i class="fas fa-microscope fa-3x"></i><h3>Una radiografía honesta de tu motor de ventas.</h3></div>
+                <div><i class="fas fa-search-dollar fa-3x"></i><h3>La identificación precisa de tu mayor fuga de recursos.</h3></div>
+                <div><i class="fas fa-chart-line fa-3x"></i><h3>Un medidor de predictibilidad sobre tu crecimiento.</h3></div>
+                <div><i class="fas fa-project-diagram fa-3x"></i><h3>Claridad sobre la estructura que necesitas para escalar.</h3></div>
+              </div>
+              <p style="margin-top: 20px; font-size: 1.2em;"><strong>"Al final de esta sesión, tendrás:"</strong></p>`,
+    image: 'assets/images/slide-4.png'
+  },
+
+  // Diapositiva 5: Pilar 1 - Cerebro (Guía 5 - BLOQUE 2: TALLER DE DIAGNÓSTICO INTERACTIVO)
+  {
+    layout: 'layout-default',
+    title: 'Diagnóstico 1: La Balanza Rota',
+    content: '<h2>"80% de tu esfuerzo, ¿genera solo el 20% de tus ventas? Descúbrelo ahora."</h2>',
+    image: 'assets/images/slide-5.png'
+  },
+
+  // Diapositiva 6: Pilar 2 - Ecosistema (Guía 6)
+  {
+    layout: 'layout-split',
+    title: 'Diagnóstico 2: El Iceberg de la Rentabilidad',
+    content: '<h3>Lo que facturas es solo la punta. ¿Sabes qué hay debajo?</h3>',
     image: 'assets/images/slide-6.png'
   },
 
-  // Diapositiva 7: Arquitectura 1 (Web)
+  // Diapositiva 7: Dato Impactante (Guía 7)
   {
-    layout: 'layout-default h1-centered',
-    title: 'Arquitectura 1: La Oficina 24/7 (Web)',
-    content: '<h3>La Inversión Crítica:</h3><p>Tu Presencia Web Básica debe ser tratada como una <strong>inversión fija en infraestructura crítica (UX/UI)</strong>.</p>',
+    layout: 'layout-center-focus',
+    title: 'Diagnóstico 3: El Botón del Crecimiento',
+    content: '<h2>"¿Tienes un sistema predecible o una máquina de apuestas?"</h2>',
     image: 'assets/images/slide-7.png'
   },
 
-  // Diapositiva 8: Riesgo de Fricción
+  // Diapositiva 8: Pilar 3 - Velocidad (Guía 8)
+  {
+    layout: 'layout-split',
+    title: 'El Techo de Cristal Invisible',
+    content: '<h3>Cuando el esfuerzo deja de generar resultados, no es falta de ganas. Es falta de sistema.</h3>',
+    image: 'assets/images/slide-8.png' // Imagen: Velocímetro o reloj
+  },
+
+  // Diapositiva 9: KPI (Guía 9)
   {
     layout: 'layout-center-focus',
-    title: 'Riesgo de Fricción',
-    content: `<h2><i class='fas fa-exclamation-triangle' style='color: var(--accent-color);'></i> ROI Negativo</h2>
-              <p>Si la Arquitectura Base falla, el <strong>88% del dinero de tu publicidad se desperdicia</strong>.</p>`,
-    image: 'assets/images/slide-8.png'
+    title: 'Diagnóstico 4: ¿Quién Pilota el Avión?',
+    content: '<h2>"Un gran sistema sin un piloto estratégico es un avión en tierra."</h2>',
+    image: 'assets/images/slide-9.png' // Imagen: Gráfico de balance
   },
 
-  // Diapositiva 9: Arquitectura 2 (Set Inicial)
+  // Diapositiva 10: Hoja de Ruta (Guía 10)
   {
-    layout: 'layout-split',
-    title: 'Arquitectura 2: El Set Inicial',
-    content: `<ul>
-                <li>Solución: Inversión en <strong>Contenido Inicial de Alto Valor</strong>.</li>
-                <li>5 Piezas Fundamentales.</li>
-                <li>Llamada a la Acción irresistible.</li>
-              </ul>
-              <p>Es el <strong>Activo Amortizable</strong> que eleva el engagement inicial.</p>`,
-    image: 'assets/images/slide-9.png'
+    layout: 'layout-default',
+    title: 'El Diagnóstico es Claro. La Solución También.',
+    content: '<h2>De un sistema reactivo a un ecosistema proactivo.</h2>',
+    image: 'assets/images/slide-10.png' // Imagen: Infografía de 4 pasos
   },
   
-  // Diapositiva 10: La Arquitectura: Escalabilidad
+  // Diapositiva 11: Sistema Completo (Guía 11 - BLOQUE 3: CIERRE Y LLAMADO A LA ACCIÓN)
   {
-    layout: 'layout-split',
-    title: 'La A de Arquitectura: Escalabilidad',
-    content: `<ul>
-                <li>Flujos simples <strong>Lead Magnet + Respuesta Automática</strong>.</li>
-                <li>Reducción del CPL.</li>
-              </ul>
-              <p>Es el <strong>Activo Amortizable</strong> que eleva el engagement inicial.</p>`,
-    image: 'assets/images/slide-10.png'
-  },
-
-  // Diapositiva 11: Flujo
-  {
-    layout: 'layout-split',
-    title: 'IA y Captación Rápida (El Flujo)',
-    content: `<ul>
-                <li>Solución: Inversión en <strong>Automatización</strong>.</li>
-                <li>Infraestructura Elástica.</li>
-                <li>Arquitectura Elástica.</li>
-                <li>Disponibilidad 24/7.</li>
-              </ul>
-              `,
+    layout: 'layout-center-focus',
+    title: 'Presentamos: El Sistema Consolida 360°',
+    content: `<h2>El "CÓMO" que transforma tu negocio en 30 días.</h2>
+              <p style="margin-top: 20px; font-size: 1.2em;">No es un curso de teoría. Es una hoja de ruta de implementación guiada.</p>
+              <div class="icon-grid" style="margin-top: 40px;">
+                <div class="icon-item"><i class="fas fa-cogs fa-3x"></i><p>Sistema</p></div>
+                <div class="icon-item"><i class="fas fa-chart-bar fa-3x"></i><p>Métricas</p></div>
+                <div class="icon-item"><i class="fas fa-calendar-alt fa-3x"></i><p>Implementación</p></div>
+              </div>`,
     image: 'assets/images/slide-11.png'
   },
-
-  // Diapositiva 12: RH
+  
+  // Diapositiva 12: Es para ti (Guía 12)
   {
-    layout: 'layout-split',
-    title: 'C de Capital Humano (La Inversión Más Rentable)',
-    content: `<ul>
-                <li>Retorno Garantizado<strong>en capacitación</strong>.</li>
-                <li>Invertir en caputal humano.</li>
-              </ul>
-              `,
-    image: 'assets/images/slide-12.png'
+    layout: 'layout-default',
+    title: '¿Es para ti? Si respondes SÍ a esto:',
+    content: `<ul style="list-style-type: disc; margin-left: 20px;">
+                <li>☑️ ¿Estás listo para dejar de 'apagar incendios' y empezar a construir?</li>
+                <li>☑️ ¿Buscas un sistema que te dé control y predictibilidad?</li>
+                <li>☑️ ¿Quieres que cada peso invertido en ventas tenga un retorno medible?</li>
+              </ul>`,
+    image: 'assets/images/slide-12.png' // Imagen: Diseño de checklist
   },
 
-  // Diapositiva 13: Checkpoint Financiero (LTV:CAC)
+  // Diapositiva 13: La Oferta (Guía 13)
   {
     layout: 'layout-center-focus',
-    title: 'La B de Benchmarks: El Checkpoint Financiero',
-    content: '<h2>El Único KPI Real: <strong>Ratio LTV:CAC</strong> (3 a 1)</h2><p>Un ratio deficiente condena al negocio a \'quemar caja\'.</p>',
-    image: 'assets/images/slide-13.png'
-  },
-  
-  // Diapositiva 14: Dilema CAC (split para comparación)
-  {
-    layout: 'layout-split',
-    title: 'Dilema CAC: Velocidad vs. Sostenibilidad',
-    content: `<div><h3>Velocidad (Ads)</h3><p>Usa Publicidad Pagada (Ads) para <strong>flujo de caja y velocidad inmediata</strong>.</p><hr></div>
-              <div><h3>Sostenibilidad (Orgánico)</h3><p>Reinvierte el capital en <strong>activos orgánicos</strong> (SEO/Contenido).</p></div>`,
-    image: 'assets/images/slide-14.png'
+    title: 'Toma el Control de tu Crecimiento. Hoy.',
+    content: `<h2>Inversión: [Mostrar precio]</h2>
+              <p>Bono de Acción Rápida: [Describir bono]</p>
+              <p><strong>Solo 15 Plazas Disponibles</strong></p>
+              <button class="cta-button" style="margin-top: 30px;">QUIERO CONSTRUIR MI ECOSISTEMA</button>`,
+    image: 'assets/images/slide-13.png' // Imagen: Diseño orientado a la conversión
   },
 
-  // Diapositiva 15: CTA Final
+  // Diapositiva 14: Q&A (Guía 14)
   {
-    layout: 'layout-default h1-centered',
-    title: 'El Próximo Paso: Generar <strong>Excedentes</strong> de Capital',
-    content: `<p style='font-size: 1.5em; margin-top: 30px;'>La decisión de hoy lleva a la consolidación y a la libertad financiera.</p>`,
-    image: 'assets/images/slide-15.png'
+    layout: 'layout-center-focus',
+    title: '¿Dudas? Estamos aquí para resolverlas.',
+    content: `<h2>"Tu pregunta puede ser la clave para otro líder. ¡Adelante!"</h2>
+              <p style="margin-top: 30px;">(Con las 3 fotos de los facilitadores)</p>`,
+    image: 'assets/images/slide-14.png'
   }
 ];
