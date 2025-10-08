@@ -25,8 +25,8 @@ const slideContent = [
     layout: 'layout-split',
     title: 'El Síndrome del "Esfuerzo Desconectado"',
     content: `<ul>
-                <li><strong>Canales Aislados</strong> = Esfuerzo Duplicado, Resultados Divididos.</li>
-                <li>El problema no es tu equipo, es la falta de un sistema que los conecte.</li>
+                <li><h3><strong>Canales Aislados</strong> = Esfuerzo Duplicado, Resultados Divididos.</h3></li>
+                <li><h3>El problema no es tu equipo, es la falta de un sistema que los conecte.</h3></li>
               </ul>`,
     image: 'assets/images/slide-3.png' // Imagen: Diagrama de caos con flechas cruzadas.
   },
@@ -36,10 +36,10 @@ const slideContent = [
     layout: 'layout-default',
     title: 'Tu Hoja de Ruta para Hoy',
     content: `<div class="columns-4">
-                <div><i class="fas fa-microscope fa-3x"></i><h3>Una radiografía honesta de tu motor de ventas.</h3></div>
-                <div><i class="fas fa-search-dollar fa-3x"></i><h3>La identificación precisa de tu mayor fuga de recursos.</h3></div>
-                <div><i class="fas fa-chart-line fa-3x"></i><h3>Un medidor de predictibilidad sobre tu crecimiento.</h3></div>
-                <div><i class="fas fa-project-diagram fa-3x"></i><h3>Claridad sobre la estructura que necesitas para escalar.</h3></div>
+                <div><h3>Una radiografía honesta de tu motor de ventas.</h3></div>
+                <div><h3>La identificación precisa de tu mayor fuga de recursos.</h3></div>
+                <div><h3>Un medidor de predictibilidad sobre tu crecimiento.</h3></div>
+                <div><h3>Claridad sobre la estructura que necesitas para escalar.</h3></div>
               </div>
               <p style="margin-top: 20px; font-size: 1.2em;"><strong>"Al final de esta sesión, tendrás:"</strong></p>`,
     image: 'assets/images/slide-4.png'
@@ -100,9 +100,9 @@ const slideContent = [
     content: `<h2>El "CÓMO" que transforma tu negocio en 30 días.</h2>
               <p style="margin-top: 20px; font-size: 1.2em;">No es un curso de teoría. Es una hoja de ruta de implementación guiada.</p>
               <div class="icon-grid" style="margin-top: 40px;">
-                <div class="icon-item"><i class="fas fa-cogs fa-3x"></i><p>Sistema</p></div>
-                <div class="icon-item"><i class="fas fa-chart-bar fa-3x"></i><p>Métricas</p></div>
-                <div class="icon-item"><i class="fas fa-calendar-alt fa-3x"></i><p>Implementación</p></div>
+                <div><p>Sistema</p></div>
+                <div><p>Métricas</p></div>
+                <div><p>Implementación</p></div>
               </div>`,
     image: 'assets/images/slide-11.png'
   },
@@ -123,10 +123,6 @@ const slideContent = [
   {
     layout: 'layout-center-focus',
     title: 'Toma el Control de tu Crecimiento. Hoy.',
-    content: `<h2>Inversión: [Mostrar precio]</h2>
-              <p>Bono de Acción Rápida: [Describir bono]</p>
-              <p><strong>Solo 15 Plazas Disponibles</strong></p>
-              <button class="cta-button" style="margin-top: 30px;">QUIERO CONSTRUIR MI ECOSISTEMA</button>`,
     image: 'assets/images/slide-13.png' // Imagen: Diseño orientado a la conversión
   },
 
