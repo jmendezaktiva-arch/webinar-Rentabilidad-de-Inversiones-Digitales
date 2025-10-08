@@ -7,7 +7,7 @@ const slideContent = [
   {
     layout: 'layout-center-focus',
     title: 'Dejar de Perseguir Ventas y Empezar a Construirlas',
-    content: '<h3>"El secreto no es trabajar más, es trabajar con inteligencia."</h3><p><em></em></p>',
+    content: '<h2>"El secreto no es trabajar más, es trabajar con inteligencia."</h2><p><em></em></p>',
     image: 'assets/images/slide-1.png',
     background: '#FFFFFF'
   },
