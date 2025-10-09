@@ -35,12 +35,7 @@ const slideContent = [
   {
     layout: 'layout-default',
     title: 'Tu Hoja de Ruta para Hoy',
-    content: `<div class="columns-4">
-                <div><h3>Una radiografía honesta de tu motor de ventas.</h3></div>
-                <div><h3>La identificación precisa de tu mayor fuga de recursos.</h3></div>
-                <div><h3>Un medidor de predictibilidad sobre tu crecimiento.</h3></div>
-                <div><h3>Claridad sobre la estructura que necesitas para escalar.</h3></div>
-              </div>
+    content: `
               <p style="margin-top: 20px; font-size: 1.2em;"><strong>"Al final de esta sesión, tendrás:"</strong></p>`,
     image: 'assets/images/slide-4.png'
   },
