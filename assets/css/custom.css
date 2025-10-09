@@ -135,20 +135,21 @@
 .horizontal-infographic .icon-item p { font-size: 1.2em; font-weight: bold; }
 .horizontal-infographic .connector { font-size: 2.5em; }
 
-/* --- OPCIÓN 1: MALLA DE CONEXIÓN SUTIL (FONDO DIGITAL TENUE) --- */
-/* Simula una red de datos para un look & feel de conectividad. */
+/* --- OPCIÓN 3: BLOQUES GEOMÉTRICOS --- */
+/* Un patrón abstracto que simula bloques o segmentos de datos. */
 .reveal {
-    /* Establece un color base blanco roto para levantar las láminas */
-    background-color: #F8F8F8; 
+    background-color: #FFFFFF;
     
-    /* Añade el patrón de puntos sutil (malla) */
-    background-image: 
-        radial-gradient(#d3dd43 0.5px, transparent 0.5px),
-        radial-gradient(#d3d3d3 0.5px, transparent 0.5px);
-    
-    /* Define el tamaño y posición del patrón (separación entre puntos) */
+    /* Patrón de líneas diagonales o bloques muy claros */
+    background-image: repeating-linear-gradient(
+        45deg, 
+        #F0F0F0, /* Un gris muy tenue */
+        #F0F0F0 1px, 
+        transparent 1px, 
+        transparent 20px
+    );
     background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
+    opacity: 0.9; /* Hace que el patrón sea aún más sutil */
 }
 
 /* Lista de Infografía con Iconos (Reemplaza .infographic-list) */
