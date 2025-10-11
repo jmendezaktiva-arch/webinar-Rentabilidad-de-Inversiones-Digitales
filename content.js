@@ -6,7 +6,7 @@ const slideContent = [
   // Diapositiva 1: Portada (Guía 1 - BLOQUE 1: BIENVENIDA Y ENCUADRE)
   {
     layout: 'layout-center-focus',
-    title: 'Dejar de Perseguir Ventas y Empezar a Construirlas',
+    title: 'De Perseguir Ventas a Duplicar Resultados',
     content: '<h2>"El secreto no es trabajar más, es trabajar con inteligencia."</h2><p><em></em></p>',
     image: 'assets/images/slide-1.png',
     background: '#FFFFFF'
@@ -15,7 +15,7 @@ const slideContent = [
   // Diapositiva 2: Misión (Guía 2)
   {
     layout: 'layout-default',
-    title: 'Nuestra Misión: Tu Crecimiento Sostenible',
+    title: 'Nuestra Misión: Tu Crecimiento Escalable',
     content: '<h2>"Construimos sistemas, no soluciones temporales."</h2>',
     image: 'assets/images/slide-2.png' // Imagen: Andamio sólido que soporta una planta.
   },
@@ -23,10 +23,12 @@ const slideContent = [
   // Diapositiva 3: Problema (Guía 3)
   {
     layout: 'layout-split',
-    title: 'El Síndrome del "Esfuerzo Desconectado"',
-    content: `<ul>
-                <li><h3><strong>Canales Aislados</strong> = Esfuerzo Duplicado, Resultados Divididos.</h3></li>
-                <li><h3>El problema no es tu equipo, es la falta de un sistema que los conecte.</h3></li>
+    title: 'DE sumar ventas a crecimiento escalado"',
+    content: `<ul>    
+                <li><h3>Cuánto puedes <strong>crecer</strong> y que necesitas.</h3></li>
+                <li><h3>En qué inviertes y con qué resultados.</h3></li>
+                <li><h3>Como mejorar la <strong>rentabilidad</h3></li> de tus inversiones.</h3></li>
+                <li><h3><strong>Mentalidad</h3></li> para Escalar</h3></li>
               </ul>`,
     image: 'assets/images/slide-3.png' // Imagen: Diagrama de caos con flechas cruzadas.
   },
