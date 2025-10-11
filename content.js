@@ -27,8 +27,8 @@ const slideContent = [
     content: `<ul>    
                 <li><h3>Cuánto puedes <strong>crecer</strong> y que necesitas.</h3></li>
                 <li><h3>En qué inviertes y con qué resultados.</h3></li>
-                <li><h3>Como mejorar la <strong>rentabilidad</h3></li> de tus inversiones.</h3></li>
-                <li><h3><strong>Mentalidad</h3></li> para Escalar</h3></li>
+                <li><h3>Como mejorar la <strong>rentabilidad</strong> de tus inversiones.</h3></li>
+                <li><h3><strong>Mentalidad</strong> para Escalar</h3></li>
               </ul>`,
     image: 'assets/images/slide-3.png' // Imagen: Diagrama de caos con flechas cruzadas.
   },
