@@ -105,12 +105,11 @@ const slideContent = [
   {
     layout: 'layout-default',
     title: '¿Es para ti? Si respondes SÍ a esto:',
-    content: `<ul style="list-style-type: disc; margin-left: 150px;">
+    content: `<ul style="list-style-type: disc; margin-left: 10px;">
                 <li>☑️ ¿Estás listo para dejar de 'apagar incendios' y empezar a construir?</li>
                 <li>☑️ ¿Buscas un sistema que te dé control y predictibilidad?</li>
                 <li>☑️ ¿Quieres que cada peso invertido en ventas tenga un retorno medible?</li>
               </ul>`,
-    image: 'assets/images/slide-12.png' // Imagen: Diseño de checklist
   },
 
   // Diapositiva 13: La Oferta (Guía 13)
