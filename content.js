@@ -105,7 +105,7 @@ const slideContent = [
   {
     layout: 'layout-default',
     title: '¿Es para ti? Si respondes SÍ a esto:',
-    content: `<ul style="list-style-type: disc; margin-left: 30px;">
+    content: `<ul>
                 <li><h1>☑️ ¿Estás listo para dejar de 'apagar incendios' y empezar a construir?</h1></li>
                 <li></li>
                 <li><h1>☑️ Buscas un sistema que te dé control y predictibilidad?</h1></li>
