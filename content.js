@@ -116,7 +116,7 @@ const slideContent = [
   {
     layout: 'layout-center-focus',
     title: 'Toma el Control de tu Crecimiento. Hoy.',
-    content: '<h3>"<strong>Confírma tu inscripción y garantiza tu lugar al chat de WA 55 2523 8312.</strong>"</h3>',
+    content: '<h3>"<strong>Confírma tu inscripción y garantiza tu lugar al chat de Whats App 55 2523 8312.</strong>"</h3>',
     image: 'assets/images/slide-13.png' // Imagen: Diseño orientado a la conversión
   },
 
