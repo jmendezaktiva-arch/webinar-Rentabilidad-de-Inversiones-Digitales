@@ -106,9 +106,9 @@ const slideContent = [
     layout: 'layout-default',
     title: '¿Es para ti? Si respondes SÍ a esto:',
     content: `<ul style=\"list-style-type: none; margin-left: 20px;\">\n
-                <li>☑️ ¿Estás listo para dejar de 'apagar incendios' y empezar a construir?</li>
-                <li>☑️ ¿Buscas un sistema que te dé control y predictibilidad?</li>
-                <li>☑️ ¿Quieres que cada peso invertido en ventas tenga un retorno medible?</li>
+                <li><h2>☑️ ¿Estás listo para dejar de 'apagar incendios' y empezar a construir?</h2></li>
+                <li><h2>☑️ ¿Buscas un sistema que te dé control y predictibilidad?</h2></li>
+                <li><h2>☑️ ¿Quieres que cada peso invertido en ventas tenga un retorno medible?</h2></li>
               </ul>`,
   },
 
