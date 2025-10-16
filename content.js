@@ -116,8 +116,8 @@ const slideContent = [
   {
     layout: 'layout-center-focus',
     title: 'Toma el Control de tu Crecimiento. Hoy.',
-    content: `<h3><strong>Confírma tu inscripción y garantiza tu lugar</strong></h3>
-              <p style="margin-top: 20px; font-size: 1.2em;">Escríbenos por Whats App al 55 2523 8312.</p>
+    content: `<h3><strong>Confírma tu inscripción y garantiza tu precio especial</strong></h3>
+              <p style="margin-top: 20px; font-size: 2.5em;">Escríbenos por Whats App al 55 2523 8312.</p>
               <div class="icon-grid" style="margin-top: 40px;">
               </div>`,
     image: 'assets/images/slide-13.png' // Imagen: Diseño orientado a la conversión
